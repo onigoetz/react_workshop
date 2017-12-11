@@ -67,7 +67,7 @@ class Tweets extends React.Component {
 
   render() {
     return <div className="Tweets">
-      {this.state.tweets.map((tweet) => <Tweet content={tweet} />)}
+      {this.state.tweets.map((tweet) => <Tweet key={tweet} content={tweet} />)}
       <Tweetbox onSubmit={this.handleSubmit} />
     </div>;
   }
